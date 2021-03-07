@@ -1,16 +1,20 @@
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 int main()
 {
+
+// Step #1
+
 	// Variable initialization
 	
 	int GPUspd, CPUspd, CPUcor, ChoiceMnu;
 
 	double PerfScr, Mult;
 	
-	string Title = "Computer Hardware Graphics Quality Recommendation Tool";
+	const string Title = "Computer Hardware Graphics Quality Recommendation Tool";
 
 	string Res, Quality;
 	
@@ -130,17 +134,25 @@ int main()
 		Quality = "Unable to Play";
 	}
 	
-
 	
+	// Step #3 
 	
+	// Display Final Results and Recommendations
 	
-	
-	
-	
-	
-	
-	
-	
+	// Title
+	cout << "\n \n" << Title << "\n";
+	// GPU Speed
+	cout << "\n GPU Clock Speed: " << GPUspd << " MHz";
+	//CPU Speed
+	cout << "\n CPU Clock Speed: " << CPUspd << " MHz";
+	//CPU Cores
+	cout << "\n Number of cores: " << CPUcor;
+	//Resolution
+	cout << "\n Monitor Resolution: " << Res;
+	//Performance Score
+	cout << "\n Performance Score: " << setprecision(7) << showpoint << PerfScr;
+	// Recommended Quality
+	cout << "\n Recommended Graphics Quality: " << Quality << "\n";
 	
 	
 }
