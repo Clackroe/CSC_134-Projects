@@ -11,7 +11,10 @@ int main()
 	double PerfScr, Mult;
 	
 	string Title = "Computer Hardware Graphics Quality Recommendation Tool";
-	string Resolution, Quality;
+
+	string Res, Quality;
+	
+	
 	
 	// Get User's Information
 	
@@ -68,7 +71,69 @@ int main()
 		return 0;
 	}
 	
-	// User Menu Input Logic
+	// User Menu Input Logic and Multiplier assignment
+	if (ChoiceMnu == 1)
+	{
+		Mult = 1;
+		Res = "1280 x 720";
+	}
+	
+	else if(ChoiceMnu == 2)
+	{
+		Mult = 0.75;
+		Res = "1920 x 1080";
+	}
+	
+	else if(ChoiceMnu == 3)
+	{
+		Mult = 0.55;
+		Res = "2560 x 1440";
+	}
+	else if(ChoiceMnu == 4)
+	{
+		Mult = 0.35;
+		Res = "3840 x 2160";
+	}
+	
+	
+	// Step #2 Calculations
+	
+	// Calculate Performance Score
+	PerfScr = ((5 * GPUspd) + (CPUcor * CPUspd)) * Mult;
+	
+	
+	
+	// Use Performance Score to calculate recommended quality
+		
+	if(PerfScr > 17000)
+	{
+		Quality = "Ultra";
+	}
+	
+	else if(PerfScr <= 17000 and PerfScr > 15000)
+	{
+		Quality = "High";
+	}
+	
+	else if(PerfScr <= 15000 and PerfScr > 13000)
+	{
+		Quality = "Medium";
+	}
+	
+	else if(PerfScr <= 13000 and PerfScr > 11000)
+	{
+		Quality = "Low";
+	}
+	
+	else if(PerfScr <= 11000)
+	{
+		Quality = "Unable to Play";
+	}
+	
+
+	
+	
+	
 	
 	
 	
