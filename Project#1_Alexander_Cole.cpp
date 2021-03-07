@@ -105,8 +105,6 @@ int main()
 	// Calculate Performance Score
 	PerfScr = ((5 * GPUspd) + (CPUcor * CPUspd)) * Mult;
 	
-	
-	
 	// Use Performance Score to calculate recommended quality
 		
 	if(PerfScr > 17000)
