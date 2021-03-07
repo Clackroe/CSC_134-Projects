@@ -45,7 +45,7 @@ int main()
 	}
 	
 	// Get User's CPU Core Count
-	cout << "Please enter the number of cores that your current processor has: ";
+	cout << "Please enter the number of cores of your processor: ";
 	cin >> CPUcor;
 	
 	// User input Number Check
