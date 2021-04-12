@@ -187,6 +187,37 @@ int main()
 		cout << "\n Performance Score: " << setprecision(7) << showpoint << PerfScr;
 		// Recommended Quality
 		cout << "\n Recommended Graphics Quality: " << Quality << "\n";
+		
+		//Decide the Highest and lowest Performance Score
+		
+		if (count == 1)
+		{
+			Highest = PerfScr; //set highest
+			Lowest = PerfScr; // set lowest
+		}
+		
+		else
+		{
+			//if the performance score is larger, set to highest
+			if (PerfScr >= Highest)
+			{
+				Highest = PerfScr;
+			}
+			//if the performance score is smaller, set to Lowest
+			if (PerfScr <= Lowest)
+			{
+				Lowest = PerfScr;
+			}
+			
+		} //Graphics Quality Loop End
+		
+		
+	// display the Highest and Lowest Performance Scores
+	
+	cout << "\nThe highest performance score was: " << Highest << endl;
+	cout << "\nThe lowest performance score was: " << Lowest << endl;
+		
+		
 	}
 	
 }
