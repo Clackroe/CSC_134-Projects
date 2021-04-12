@@ -40,7 +40,7 @@ int main()
 	
 	//Loop Code
 	
-	for(int c=1; c <= CompAmmount; c++)
+	for(int count = 1; count <= CompAmmount; count++)
 	{
 		
 		// Get User's Information
@@ -50,10 +50,11 @@ int main()
 		cin >> GPUspd;
 		
 		// User Input Number Check
-		if (GPUspd < 0)
+		while(GPUspd < 800 or GPUspd > 2000)
 		{
-			cout << "Invalid graphics card Clock Speed entered. Program will terminate.";
-			return 0;
+			cout << "\nERROR: Invalid GPU Speed Entered. GPU Speed should be between 800 and 2000\n";
+			cout << "Please enter the clock speed (in Megahertz) of your current graphics card: ";
+			cin >> GPUspd;
 		}
 		
 		// Get User's CPU Clock Speed
@@ -61,10 +62,11 @@ int main()
 		cin >> CPUspd;
 		
 		// User Input Number Check
-		if (CPUspd < 0)
+		while(CPUspd < 1000 or CPUspd > 5500)
 		{
-			cout << "Invalid processor clock speed entered. Program will terminate.";
-			return 0;
+			cout << "\nERROR: Invalid CPU Speed Entered. CPU Speed should be between 1000 and 5500\n";
+			cout << "Please enter the clock speed (in Megahertz) of your current processor: ";
+			cin >> CPUspd;
 		}
 		
 		// Get User's CPU Core Count
@@ -72,9 +74,11 @@ int main()
 		cin >> CPUcor;
 		
 		// User input Number Check
-		if (CPUcor < 0)
+		while(CPUcor < 1 or CPUcor > 16)
 		{
-			cout << "Invalid processor core count entered. Program will terminate.";
+			cout << "\nERROR: Invalid Number CPU Cores Entered. CPU Cores should be between 1 and 16\n";
+			cout << "Please enter the number of cores of your processor: ";
+			cin >> CPUcor;
 		}
 		
 		
@@ -92,10 +96,21 @@ int main()
 		cin >> ChoiceMnu;
 		
 		// User Menu Input Check
-		if (ChoiceMnu < 1 or ChoiceMnu > 4)
+		while(ChoiceMnu < 1 or ChoiceMnu > 4)
 		{
-			cout << "Invalid menu item chosen. Program will terminate.";
-			return 0;
+			cout << "\nERROR: Invalid Menu Choice Entered. Menu Choices should be between 1 and 4\n";
+		
+			//Re-ask the user to choose from the menu
+			cout << "What resolution is your monitor? \n";
+		
+			cout << "\t 1. 1280 x 720 \n";
+			cout << "\t 2. 1920 x 1080 \n";
+			cout << "\t 3. 2560 x 1440 \n";
+			cout << "\t 4. 3840 x 2160 \n";
+			
+			// User Menu Choice Input
+			cout << "Please enter your choice from the items listed above: ";
+			cin >> ChoiceMnu;
 		}
 		
 		// User Menu Input Logic and Multiplier assignment
