@@ -36,7 +36,7 @@ int main()
 	}
 	
 	// Output Title
-	cout << "\n \n" << Title << "\n";
+	cout << "\n \n" << Title << "\n" << endl;
 	
 	//Loop Code
 	
@@ -46,7 +46,7 @@ int main()
 		// Get User's Information
 		
 		// Get User GPU Clock Speed
-		cout << "Please enter the clock speed (in Megahertz) of your current graphics card: ";
+		cout << "\nPlease enter the clock speed (in Megahertz) of your current graphics card: ";
 		cin >> GPUspd;
 		
 		// User Input Number Check
@@ -176,7 +176,7 @@ int main()
 		// Display Final Results and Recommendations
 		
 		// GPU Speed
-		cout << "\n GPU Clock Speed: " << GPUspd << " MHz";
+		cout << "\n\n GPU Clock Speed: " << GPUspd << " MHz";
 		//CPU Speed
 		cout << "\n CPU Clock Speed: " << CPUspd << " MHz";
 		//CPU Cores
@@ -209,15 +209,15 @@ int main()
 				Lowest = PerfScr;
 			}
 			
-		} //Graphics Quality Loop End
+		} 
 		
 		
+	}//Graphics Quality Loop End
+	
+	
 	// display the Highest and Lowest Performance Scores
 	
 	cout << "\nThe highest performance score was: " << Highest << endl;
 	cout << "\nThe lowest performance score was: " << Lowest << endl;
-		
-		
-	}
 	
 }
