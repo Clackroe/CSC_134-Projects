@@ -15,7 +15,7 @@ I would like to express my gratitude to my school and instructors for providing 
 
 If you have any questions or would like to connect with me, you can reach me via the following channels:
 
-- Email: [your.email@example.com](mailto:acole67@uncc.edu)
-- LinkedIn: [Your Name](https://www.linkedin.com/in/alexandercole19731/)
+- Email: [acole67@uncc.edu](mailto:acole67@uncc.edu)
+- LinkedIn: [Xander Cole](https://www.linkedin.com/in/alexandercole19731/)
 
 ---
